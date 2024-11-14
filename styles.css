@@ -1,0 +1,432 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background and text styles */
+body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    font-family: "Varela", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #333;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    width: 5%;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 1.5rem;
+    font-family: "Varela", sans-serif;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+main {
+    max-width: 600px;
+    text-align: left;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    line-height: 1.6;
+}
+
+
+section {
+    margin-bottom: 2rem;
+}
+
+.h4 {
+    font-size: 1.75rem;
+}
+
+
+.name {
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(41, 41, 41);
+    margin-bottom: 5rem;
+}
+
+
+.name h1, .scroller h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: #ffffff;
+}
+
+.location {
+    font-size: 0.9rem;
+    color: #535353;
+    margin-top: 0;
+    padding-top: 0;
+    display: flex;
+    align-items: center; /* Align the icon and text vertically */
+}
+
+.location i {
+    margin-right: 8px; /* Add space between the pin icon and the location text */
+    font-size: 1.2rem; /* Icon size */
+    color: #8bc34a; /* Icon color, change as needed */
+}
+
+.holder{
+    width: 35px; 
+    height: 35px;
+    display: flex;
+    align-items: center; 
+}
+
+.holder-text {
+    font-size: 16px;  /* Adjust text size */
+    font-weight: bold;
+    opacity: 1;      
+}
+
+.image {
+    opacity: 40%;
+    display: block;
+}
+
+.portfolio {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.portfolio img {
+    width: 100%;
+    display: block;
+}
+
+.h5{
+    font-size: 10;
+}
+
+.portfolio, .project-item {
+    position: relative;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 1.5rem; /* Adds gap between project images */
+}
+
+.portfolio img, .project-item img {
+    width: 100%;
+    display: block;
+    opacity: 70%;
+}
+
+.content{
+    position: absolute;
+    bottom: 0;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    transition: transform 0.7s ease-in-out, opacity 0.5s ease-in-out; /* Smooth transition */
+    opacity: 1;
+}
+
+.portfolio:hover .content, .project-item:hover .content {
+    transform: translateY(-20px); /* Slide the content up on hover */
+}
+
+.button {
+    display: none; 
+    width: 20%;
+    padding: 5px;
+    border-radius: 5%;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 0; 
+}
+
+.portfolio:hover .button, .project-item:hover .button {
+    display: block; /* Show the button when hovering */
+    animation: fadeIn 0.7s ease-in-out; /* Fade-in effect for the button */
+}
+
+
+@keyframes fadeIn {
+    from {
+    opacity: 0;
+    transform: translateY(10px);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+.projects{
+    margin-bottom: 2rem;
+}
+
+.projects1 img {
+    border-radius: 10px;
+    border: 3px solid rgb(41, 41, 41);
+    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.projects2 img {
+    border-radius: 10px;
+    border: 3px solid rgb(41, 41, 41);
+    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.projects3 img {
+    border-radius: 10px;
+    border: 3px solid rgb(41, 41, 41);
+    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+strong {
+    color: #ffffff;
+}
+
+a {
+    color: #8bc34a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Social icons inside name border */
+.social-icons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    margin-left: 1rem;
+    border-radius: 50%; /* Makes the border round */
+    overflow: hidden; /* Ensures the image stays inside the border */
+    border: 2px solid #313131; /* Add a border around the icons */
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+/* Hover effect for scaling the icon */
+.social-icon:hover img {
+    transform: scale(1.1);
+}
+
+/* Hover effect for border color change */
+.social-icon:hover {
+    border-color: #8bc34a; /* Change border color on hover */
+}
+
+/* Scroller styling */
+.scroller, .scroller-bottom {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    
+    /* Apply linear gradient mask */
+    -webkit-mask: linear-gradient(
+        90deg, 
+        transparent, 
+        white 20%, 
+        white 80%, 
+        transparent
+    );
+    mask: linear-gradient(
+        90deg, 
+        transparent, 
+        white 20%, 
+        white 80%, 
+        transparent
+    );
+}
+
+.scroller__inner, .scroller-bottom .scroller__inner {
+    display: flex;
+    gap: 2rem; /* Spacing between icons */
+    animation: scrolling-left-right 27s linear infinite, fade 27s linear infinite;
+}
+
+.scroller__inner:hover, .scroller-bottom .scroller__inner:hover {
+    animation-play-state: paused; /* Pause on hover */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; /* Align text and logo vertically */
+}
+
+.logo-container img {
+    width: 40px; 
+    height: 40px;
+    margin-right: 10px; /* Space between the icon and text */
+}
+
+.logo-text {
+    font-size: 16px;  /* Adjust text size */
+    font-weight: bold;
+    opacity: 1;       /* Ensure text is visible */
+}
+
+/* Duplicate content for seamless scroll */
+.scroller__inner:after, .scroller-bottom .scroller__inner:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+/* Scrolling animation (Left to right) */
+@keyframes scrolling-left-right {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Ensure content moves left, wrapping seamlessly */
+    }
+}
+
+/* Scrolling animation (Bottom to top, reverse direction) */
+@keyframes scrolling-bottom-top {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Scroller2 styling */
+.scroller2, .scroller-bottom {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    
+    /* Apply linear gradient mask */
+    -webkit-mask: linear-gradient(
+        90deg, 
+        transparent, 
+        white 20%, 
+        white 80%, 
+        transparent
+    );
+    mask: linear-gradient(
+        90deg, 
+        transparent, 
+        white 20%, 
+        white 80%, 
+        transparent
+    );
+}
+
+.scroller2__inner, .scroller2-bottom .scroller__inner {
+    display: flex;
+    gap: 2rem; /* Spacing between icons */
+    animation: scrolling-left-right 20s linear infinite, fade 20s linear infinite;
+}
+
+.scroller2__inner:hover, .scroller2-bottom .scroller__inner:hover {
+    animation-play-state: paused; /* Pause on hover */
+}
+
+
+
+.logo-container {
+    display: flex;
+    align-items: center; /* Align text and logo vertically */
+}
+
+.logo-container img {
+    width: 40px; /* Set icon size */
+    height: 40px;
+    margin-right: 10px; /* Space between the icon and text */
+}
+
+.logo-text {
+    font-size: 16px;  /* Adjust text size */
+    font-weight: bold;
+    opacity: 1;       /* Ensure text is visible */
+}
+
+/* Duplicate content for seamless scroll */
+.scroller2__inner:after, .scroller2-bottom .scroller2__inner:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+/* Scrolling animation (Left to right) */
+@keyframes scrolling-left-right {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Ensure content moves left, wrapping seamlessly */
+    }
+}
+
+/* Scrolling animation (Bottom to top, reverse direction) */
+@keyframes scrolling-bottom-top {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
