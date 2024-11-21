@@ -1,13 +1,11 @@
-/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
 }
 
-/* Background and text styles */
 body {
-    background-color: #1a1a1a;
+    background-image: url('images/background.gif');
     color: #e0e0e0;
     font-family: "Varela", sans-serif;
     display: flex;
@@ -21,11 +19,15 @@ header {
     width: 100%;
     text-align: center;
     padding: 1rem 0;
-    background-color: #1a1a1a;
+    background-color: rgba(26, 26, 26, 0.7);
     border-bottom: 1px solid #333;
     position: sticky;
     top: 0;
     z-index: 10;
+}
+
+.about-text{
+    text-indent: 50px;
 }
 
 .logo {
@@ -77,7 +79,7 @@ section {
     padding: 10px;
     border-radius: 10px;
     border: 1px solid rgb(41, 41, 41);
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 
@@ -184,6 +186,254 @@ section {
     animation: fadeIn 0.7s ease-in-out; /* Fade-in effect for the button */
 }
 
+/* Projects */
+/* Projects */
+/* Projects */
+
+
+.projects-overview {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(26, 26, 26, 0.3);
+    color: #ffffff;
+    font-family: "Varela", sans-serif;
+}
+
+.projects-overview h1 {
+    font-size: 2.8rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.project-description {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-item {
+    background-color: rgba(26, 26, 26, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.project-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.project-item p {
+    font-size: 0.95rem;
+    color: #dddbdb;
+}
+
+.github-link {
+    margin-top: 50px;
+    font-size: 1.1rem;
+}
+
+.github-link .button {
+    display: inline-block;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.github-link .button:hover {
+    background-color: #a7a7a7;
+    transform: scale(1.05);
+}
+
+
+section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+/* Section Content */
+section ul {
+    list-style: none;
+    padding-left: 0;
+    line-height: 1.8;
+}
+
+section ul li {
+    margin-bottom: 0.5rem;
+}
+
+strong {
+    color: #e0e0e0;
+}
+
+h3 {
+    margin-top: 1.5rem;
+    color: #ffffff;
+}
+
+/* Consistent Padding for Sections */
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid rgb(41, 41, 41);
+}
+
+/* Hover Effect */
+section:hover {
+    transform: translateY(-3px);
+    transition: transform 0.3s ease;
+}
+/* Contact */
+/* Contact */
+/* Contact */
+/* Contact */
+.contact-me {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: rgba(26, 26, 26, 0.3);
+    font-family: "Varela", sans-serif;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.contact-me h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.contact-me p {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #4e4e4e;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.button {
+    display: inline-block;
+    background-color: #292929;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.social-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-links p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.social-icon img:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
 
 @keyframes fadeIn {
     from {
@@ -238,7 +488,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Social icons inside name border */
 .social-icons {
     position: absolute;
     top: 10px;
@@ -249,9 +498,9 @@ a:hover {
 
 .social-icon {
     margin-left: 1rem;
-    border-radius: 50%; /* Makes the border round */
-    overflow: hidden; /* Ensures the image stays inside the border */
-    border: 2px solid #313131; /* Add a border around the icons */
+    border-radius: 50%; 
+    overflow: hidden; 
+    border: 2px solid #313131;
 }
 
 .social-icon img {
@@ -261,17 +510,15 @@ a:hover {
     display: block;
 }
 
-/* Hover effect for scaling the icon */
 .social-icon:hover img {
     transform: scale(1.1);
 }
 
-/* Hover effect for border color change */
 .social-icon:hover {
-    border-color: #8bc34a; /* Change border color on hover */
+    border-color: #8bc34a; 
 }
 
-/* Scroller styling */
+
 .scroller, .scroller-bottom {
     overflow: hidden;
     white-space: nowrap;
@@ -279,7 +526,7 @@ a:hover {
     display: flex;
     align-items: center;
     
-    /* Apply linear gradient mask */
+
     -webkit-mask: linear-gradient(
         90deg, 
         transparent, 
@@ -298,49 +545,46 @@ a:hover {
 
 .scroller__inner, .scroller-bottom .scroller__inner {
     display: flex;
-    gap: 2rem; /* Spacing between icons */
+    gap: 2rem; 
     animation: scrolling-left-right 27s linear infinite, fade 27s linear infinite;
 }
 
 .scroller__inner:hover, .scroller-bottom .scroller__inner:hover {
-    animation-play-state: paused; /* Pause on hover */
+    animation-play-state: paused; 
 }
 
 .logo-container {
     display: flex;
-    align-items: center; /* Align text and logo vertically */
+    align-items: center; 
 }
 
 .logo-container img {
     width: 40px; 
     height: 40px;
-    margin-right: 10px; /* Space between the icon and text */
+    margin-right: 10px; 
 }
 
 .logo-text {
-    font-size: 16px;  /* Adjust text size */
+    font-size: 16px; 
     font-weight: bold;
-    opacity: 1;       /* Ensure text is visible */
+    opacity: 1;       
 }
 
-/* Duplicate content for seamless scroll */
 .scroller__inner:after, .scroller-bottom .scroller__inner:after {
     content: '';
     display: inline-block;
     width: 100%;
 }
 
-/* Scrolling animation (Left to right) */
 @keyframes scrolling-left-right {
     0% {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%); /* Ensure content moves left, wrapping seamlessly */
+        transform: translateX(-50%);
     }
 }
 
-/* Scrolling animation (Bottom to top, reverse direction) */
 @keyframes scrolling-bottom-top {
     0% {
         transform: translateY(100%);
@@ -350,7 +594,6 @@ a:hover {
     }
 }
 
-/* Scroller2 styling */
 .scroller2, .scroller-bottom {
     overflow: hidden;
     white-space: nowrap;
@@ -358,7 +601,6 @@ a:hover {
     display: flex;
     align-items: center;
     
-    /* Apply linear gradient mask */
     -webkit-mask: linear-gradient(
         90deg, 
         transparent, 
