@@ -96,13 +96,13 @@ section {
     margin-top: 0;
     padding-top: 0;
     display: flex;
-    align-items: center; /* Align the icon and text vertically */
+    align-items: center; 
 }
 
 .location i {
-    margin-right: 8px; /* Add space between the pin icon and the location text */
-    font-size: 1.2rem; /* Icon size */
-    color: #8bc34a; /* Icon color, change as needed */
+    margin-right: 8px;
+    font-size: 1.2rem; 
+    color: #8bc34a; 
 }
 
 .holder{
@@ -113,7 +113,7 @@ section {
 }
 
 .holder-text {
-    font-size: 16px;  /* Adjust text size */
+    font-size: 16px; 
     font-weight: bold;
     opacity: 1;      
 }
@@ -144,7 +144,7 @@ section {
     overflow: hidden;
     max-width: 800px;
     margin: 0 auto;
-    margin-bottom: 1.5rem; /* Adds gap between project images */
+    margin-bottom: 1.5rem; 
 }
 
 .portfolio img, .project-item img {
@@ -159,12 +159,12 @@ section {
     color: #f1f1f1;
     width: 100%;
     padding: 20px;
-    transition: transform 0.7s ease-in-out, opacity 0.5s ease-in-out; /* Smooth transition */
+    transition: transform 0.7s ease-in-out, opacity 0.5s ease-in-out; 
     opacity: 1;
 }
 
 .portfolio:hover .content, .project-item:hover .content {
-    transform: translateY(-20px); /* Slide the content up on hover */
+    transform: translateY(-20px);
 }
 
 .button {
@@ -182,8 +182,8 @@ section {
 }
 
 .portfolio:hover .button, .project-item:hover .button {
-    display: block; /* Show the button when hovering */
-    animation: fadeIn 0.7s ease-in-out; /* Fade-in effect for the button */
+    display: block; 
+    animation: fadeIn 0.7s ease-in-out; 
 }
 
 /* Projects */
@@ -302,14 +302,12 @@ h3 {
     color: #ffffff;
 }
 
-/* Consistent Padding for Sections */
 section {
     margin-bottom: 2rem;
     padding: 1rem;
     border: 1px solid rgb(41, 41, 41);
 }
 
-/* Hover Effect */
 section:hover {
     transform: translateY(-3px);
     transition: transform 0.3s ease;
@@ -619,51 +617,48 @@ a:hover {
 
 .scroller2__inner, .scroller2-bottom .scroller__inner {
     display: flex;
-    gap: 2rem; /* Spacing between icons */
+    gap: 2rem;
     animation: scrolling-left-right 20s linear infinite, fade 20s linear infinite;
 }
 
 .scroller2__inner:hover, .scroller2-bottom .scroller__inner:hover {
-    animation-play-state: paused; /* Pause on hover */
+    animation-play-state: paused; 
 }
 
 
 
 .logo-container {
     display: flex;
-    align-items: center; /* Align text and logo vertically */
+    align-items: center; 
 }
 
 .logo-container img {
-    width: 40px; /* Set icon size */
+    width: 40px; 
     height: 40px;
-    margin-right: 10px; /* Space between the icon and text */
+    margin-right: 10px; 
 }
 
 .logo-text {
-    font-size: 16px;  /* Adjust text size */
+    font-size: 16px;
     font-weight: bold;
-    opacity: 1;       /* Ensure text is visible */
+    opacity: 1;    
 }
 
-/* Duplicate content for seamless scroll */
 .scroller2__inner:after, .scroller2-bottom .scroller2__inner:after {
     content: '';
     display: inline-block;
     width: 100%;
 }
 
-/* Scrolling animation (Left to right) */
 @keyframes scrolling-left-right {
     0% {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%); /* Ensure content moves left, wrapping seamlessly */
+        transform: translateX(-50%); 
     }
 }
 
-/* Scrolling animation (Bottom to top, reverse direction) */
 @keyframes scrolling-bottom-top {
     0% {
         transform: translateY(100%);
